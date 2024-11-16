@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TP2 | IES</title>
+		<link rel="stylesheet" href="./index.css" />
+		<script src="./home.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<a href="../form_principal/index.html">
+				<img
+					src="imagenes_principal/Logo.png"
+					width="30"
+					height="30"
+					alt="Logo de Dodo"
+				/>
+			</a>
+
+			<h1>Dodo</h1>
+			<button id="menu-button" aria-label="Abrir menú" class="menu-button">
+				<img
+					src="imagenes_principal/menu.png"
+					width="30"
+					height="30"
+					alt="Ícono de menú"
+				/>
+			</button>
+
+			<nav id="nav-menu">
+				<ul>
+					<li class="menu"><a href="#principal">Principal</a></li>
+					<li class="menu"><a href="#catalogo">Catalogo</a></li>
+					<li class="menu"><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<img
+					class="img_principal"
+					src="imagenes_principal/Portada.jpg"
+					width="1280"
+					height="475"
+					alt="Imagen de portada"
+				/>
+				<h2 class="h2">Sobre Nosotros</h2>
+				<div class="sobre_nosotros">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						<br />
+						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						<br />
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat.
+						<br />
+						Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+						<br />
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+						officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</section>
+
+			<section>
+				<br /><br />
+				<h2 class="h2">Algunos de nuestros Trabajos</h2>
+				<div class="trabajos">
+					<img
+						src="imagenes_principal/trabajo1.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 1"
+					/>
+					<img
+						src="imagenes_principal/trabajo2.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 2"
+					/>
+					<img
+						src="imagenes_principal/trabajo3.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 3"
+					/>
+					<img
+						src="imagenes_principal/trabajo4.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 4"
+					/>
+					<br />
+					<img
+						src="imagenes_principal/trabajo5.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 5"
+					/>
+					<img
+						src="imagenes_principal/trabajo6.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 6"
+					/>
+					<img
+						src="imagenes_principal/trabajo7.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 7"
+					/>
+					<img
+						src="imagenes_principal/trabajo8.jpg"
+						width="192"
+						height="192"
+						alt="Trabajo 8"
+					/>
+				</div>
+			</section>
+
+			<section>
+				<div class="mapa">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32399.516528378823!2d-64.18882117376728!3d-31.398151732110367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298e1314ddd43%3A0x9773a453e96d11df!2sC%C3%B3rdoba%20Shopping!5e0!3m2!1ses-419!2sar!4v1727480424495!5m2!1ses-419!2sar"
+						width="1280"
+						height="475"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="foo_telefono">
+				<p>Telefono: 3517679852</p>
+			</div>
+			<div class="foo_ubicacion">
+				<p>Cordoba, Argentina</p>
+			</div>
+			<div class="img_footer">
+				<a
+					href="https://web.whatsapp.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="./imagenes_principal/Whatsapp.png"
+						width="30"
+						height="30"
+						alt="WhatsApp"
+					/>
+				</a>
+				<a
+					href="https://www.instagram.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src="./imagenes_principal/Instagram.jpg"
+						width="30"
+						height="30"
+						alt="Instagram"
+					/>
+				</a>
+			</div>
+		</footer>
+
+		<!-- <script>
+        const menuButton = document.getElementById('menu-button');
+        const navMenu = document.getElementById('nav-menu');
+    
+        menuButton.addEventListener('click', () => {
+            // Cambiar la visibilidad del menú
+            if (navMenu.style.display === 'none' || navMenu.style.display === '') {
+                navMenu.style.display = 'block'; // Muestra el menú
+            } else {
+                navMenu.style.display = 'none'; // Oculta el menú
+            }
+        });
+    </script> -->
+	</body>
+</html>
