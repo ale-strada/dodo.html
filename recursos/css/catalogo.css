@@ -1,44 +1,3 @@
-/* Reset básico para eliminar márgenes y paddings por defecto */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
-}
-
-/* Estilos generales del cuerpo */
-body {
-	font-family: Arial, sans-serif; /* Define la fuente */
-	/* background-color: #babcbe; /* Color de fondo claro */
-	color: #333; /* Color de texto oscuro */
-	line-height: 1.6; /* Mejora la legibilidad del texto */
-	background-color: white;
-}
-
-/* Estilo del encabezado */
-header {
-	position: sticky;
-	top: 0; /* Se fija en la parte superior de la ventana */
-	background: #9fa1a3;
-	color: black; /* Texto en blanco */
-	padding: 10px 20px; /* Espaciado interno */
-	display: flex; /* Usar flexbox para alinear elementos */
-	align-items: center; /* Centrar verticalmente */
-	justify-content: space-between; /* Espacio entre los elementos */
-}
-
-/* Espaciado entre el logo y el texto */
-header img {
-	margin-right: 10px;
-}
-
-button {
-	background: transparent; /* Fondo transparente */
-	border: none; /* Sin borde */
-	cursor: pointer; /* Cambia el cursor al pasar por encima */
-}
-/**************************************************************************************************************
-
-
 /* Estilo del contenedor principal */
 main {
 	padding: 20px; /* Espaciado interno */
@@ -60,16 +19,62 @@ h2 {
 	font-weight: bold;
 }
 
-/* Estilo de los artículos de productos */
+/* Estilo base (para pantallas grandes) */
 article {
-	display: flex; /* Usar flexbox para alinear imagen y texto */
-	align-items: center; /* Alinear la imagen y el texto al principio */
-	background-color: #f0f0f0; /* Fondo */
-	border-radius: 5px; /* Bordes redondeados */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-	padding: 10px; /* Espaciado interno */
-	margin: 10px auto; /* Margen superior e inferior, centrar horizontalmente */
-	max-width: 1000px; /* Ajustar el ancho máximo del contenedor */
+	display: flex;
+	align-items: center;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin: 10px auto;
+	max-width: 1000px;
+	width: 100%;
+}
+
+/* Estilo para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+	article {
+		flex-direction: column; /* Cambiar a columna para apilar la imagen y el texto */
+		padding: 15px; /* Aumentar padding para mejor espaciado */
+		margin: 15px 10px; /* Ajustar margen */
+	}
+
+	article img {
+		width: 100%; /* Imagen ocupa todo el ancho disponible */
+		height: auto; /* Mantener la proporción */
+		border-radius: 5px; /* Bordes redondeados */
+		margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+	}
+
+	.productos {
+		text-align: center; /* Centrar texto para mejor visualización */
+	}
+}
+
+#productos-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+@media (max-width: 600px) {
+	#productos-container {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+/* article {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	background-color: #f0f0f0;
+} */
+
+.productos img {
+	border-radius: 10px;
 }
 
 .productos {
@@ -84,39 +89,4 @@ article img {
 	margin-top: 10px; /* Espaciado en la parte superior */
 	max-width: 180px; /* Ajustar el ancho máximo de las imágenes */
 	height: auto; /* Mantener la proporción de la imagen */
-}
-
-/*******************************************************************************************************
-/* Estilo del pie de página */
-footer {
-	display: flex; /* Usar flexbox para el layout */
-	align-items: center; /* Centrar verticalmente los elementos */
-	background: #9fa1a3; /* Fondo */
-	color: black; /* Color negro para el texto en el footer */
-	padding: 10px 20px; /* Espaciado interno */
-}
-
-/* Estilo de las imágenes de redes sociales en el pie de página */
-footer img {
-	margin-left: 5px; /* Espaciado alrededor de las imágenes */
-}
-
-/* Estilo para centrar el texto en el pie de página */
-.foo_ubicacion {
-	text-align: center; /* Centrar el texto */
-	flex: 1; /* Permitir que ocupe el espacio disponible */
-	margin: 0; /* Eliminar márgenes para evitar desalineaciones */
-	font-size: 18px; /* Ajusta el tamaño de la fuente según lo necesites */
-	font-weight: bold; /* Hace el texto en negrita */
-}
-
-.foo_telefono {
-	font-size: 18px; /* Ajusta el tamaño de la fuente según lo necesites */
-	font-weight: bold; /* Hace el texto en negrita */
-}
-
-/* Espacio para las imágenes en el pie de página */
-.img_footer {
-	margin-right: 20px;
-	background: #9fa1a3; /* Fondo */
 }

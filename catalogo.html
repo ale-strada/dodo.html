@@ -4,11 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>TP2 | IES</title>
+		<!-- ruta del CSS -->
+		<link rel="stylesheet" href="./recursos/css/base.css" />
 		<link rel="stylesheet" href="./recursos/css/catalogo.css" />
 		<!-- ruta del CSS index -->
 		<link rel="stylesheet" href="./recursos/css/index.css" />
-		<!-- ruta del Js -->
-		<script src="./recursos/js/index.js" defer></script>
+		<!-- ruta del Js catalogo -->
+		<script src="./recursos/js/catalogo.js" defer></script>
 		<!-- Importa la biblioteca Font Awesome -->
 		<link
 			rel="stylesheet"
@@ -19,7 +21,7 @@
 		<header>
 			<a href="./index.html">
 				<img
-					src="./form_catalogo/imagenes_catalogo/Logo.png"
+					src="./recursos/imagenes/Logo.png"
 					width="30"
 					height="30"
 					alt="Logo de Dodo"
@@ -51,115 +53,7 @@
 		<main>
 			<section>
 				<h2>PRODUCTOS CON ENTREGA INMEDIATA</h2>
-
-				<article>
-					<img
-						src="./form_catalogo/imagenes_catalogo/trabajo1.jpg"
-						width="140"
-						height="140"
-						alt="Trabajo 1"
-					/>
-					<div class="productos">
-						<p class="p_producto">Producto 1</p>
-						<br />
-						<p>Descripción del producto 1.</p>
-					</div>
-				</article>
-
-				<article>
-					<img
-						src="./form_catalogo/imagenes_catalogo/trabajo2.jpg"
-						width="140"
-						height="140"
-						alt="Trabajo 2"
-					/>
-					<div class="productos">
-						<p class="p_producto">Producto 2</p>
-						<br />
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Perferendis id laudantium placeat sequi enim minima excepturi,
-							asperiores, beatae neque, illum voluptatum rerum at architecto
-							accusamus numquam natus saepe officia laboriosam.
-						</p>
-					</div>
-				</article>
-
-				<article>
-					<img
-						src="./form_catalogo/imagenes_catalogo/trabajo3.jpg"
-						width="140"
-						height="140"
-						alt="Trabajo 3"
-					/>
-					<div class="productos">
-						<p class="p_producto">Producto 3</p>
-						<br />
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-							magnam deserunt. Natus, tempora facere quod optio eaque
-							reprehenderit deleniti corporis accusamus atque provident delectus
-							nostrum voluptates labore facilis quidem suscipit.
-						</p>
-					</div>
-				</article>
-
-				<article>
-					<img
-						src="./form_catalogo/imagenes_catalogo/trabajo4.jpg"
-						width="140"
-						height="140"
-						alt="Trabajo 4"
-					/>
-					<div class="productos">
-						<p class="p_producto">Producto 4</p>
-						<br />
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-							reprehenderit aut nulla. Quibusdam amet eos hic maiores
-							aspernatur, quam, quo libero deserunt voluptatibus, delectus ab
-							quaerat atque nihil temporibus a.
-						</p>
-					</div>
-				</article>
-
-				<article>
-					<img
-						src="./form_catalogo/imagenes_catalogo/trabajo5.jpg"
-						width="140"
-						height="140"
-						alt="Trabajo 5"
-					/>
-					<div class="productos">
-						<p class="p_producto">Producto 5</p>
-						<br />
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-							quos ullam nam molestias vero, autem ex aliquid consequatur, natus
-							nobis perferendis quidem itaque, excepturi quaerat necessitatibus
-							porro sapiente accusantium atque?
-						</p>
-					</div>
-				</article>
-
-				<article>
-					<img
-						src="./form_catalogo/imagenes_catalogo/trabajo6.jpg"
-						width="140"
-						height="140"
-						alt="Trabajo 6"
-					/>
-					<div class="productos">
-						<p class="p_producto">Producto 6</p>
-						<br />
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-							esse, quisquam accusantium cupiditate in distinctio rem ipsam ad
-							delectus, incidunt saepe excepturi commodi sed? Illo maiores
-							accusantium vel velit mollitia.
-						</p>
-					</div>
-				</article>
+				<div id="productos-container"></div>
 			</section>
 		</main>
 		<footer>
@@ -177,7 +71,7 @@
 					rel="noopener noreferrer"
 					style="text-decoration: none"
 				>
-					<i class="fa-brands fa-whatsapp"></i>
+					<i class="fa-brands fa-whatsapp icon"></i>
 				</a>
 				<a
 					href="https://www.instagram.com/"
@@ -185,7 +79,7 @@
 					rel="noopener noreferrer"
 					style="text-decoration: none"
 				>
-					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-instagram icon"></i>
 				</a>
 			</div>
 		</footer>
