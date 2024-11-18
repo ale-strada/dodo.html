@@ -29,6 +29,12 @@ header {
 	justify-content: space-between; /* Espacio entre los elementos */
 	height: 70px; /* Altura del encabezado */
 }
+.header-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+}
 
 /* Espaciado entre el logo y el texto */
 header img {
