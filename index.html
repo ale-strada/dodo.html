@@ -4,10 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>TP2 | IES</title>
-		<!-- Actualiza la ruta del CSS -->
-		<link rel="stylesheet" href="./form_principal/index.css" />
-		<!-- Actualiza la ruta del script -->
-		<script src="./form_principal/home.js" defer></script>
+		<!-- ruta del CSS -->
+		<link rel="stylesheet" href="./recursos/css/index.css" />
+		<!-- ruta del Js -->
+		<script src="./recursos/js/index.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -22,21 +22,24 @@
 			</a>
 
 			<h1>Dodo</h1>
+
+			<!-- Botón de menú hamburguesa -->
 			<button id="menu-button" aria-label="Abrir menú" class="menu-button">
-				<!-- Actualiza la ruta del ícono del menú -->
-				<img
-					src="./form_principal/imagenes_principal/menu.png"
-					width="30"
-					height="30"
-					alt="Ícono de menú"
-				/>
+				<span class="menu-icon"></span>
+				<span class="menu-icon"></span>
+				<span class="menu-icon"></span>
 			</button>
 
+			<!-- Menú de navegación -->
 			<nav id="nav-menu">
-				<ul>
-					<li class="menu"><a href="#principal">Principal</a></li>
-					<li class="menu"><a href="#catalogo">Catalogo</a></li>
-					<li class="menu"><a href="#contacto">Contacto</a></li>
+				<ul class="menu-list">
+					<li class="menu"><a href="./index.html">Principal</a></li>
+					<li class="menu">
+						<a href="./catalogo.html">Catálogo</a>
+					</li>
+					<li class="menu">
+						<a href="./contacto.html">Contacto</a>
+					</li>
 				</ul>
 			</nav>
 		</header>

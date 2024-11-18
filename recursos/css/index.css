@@ -49,10 +49,86 @@ button {
 	text-align: right;
 }
 
+/* Ocultar el menú por defecto en dispositivos móviles */
+#nav-menu {
+	display: none;
+}
+
+/* Estilos del botón hamburguesa */
+.menu-button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	position: relative;
+	width: 30px;
+	height: 30px;
+}
+
+/* Líneas del icono hamburguesa */
+.menu-icon {
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+	border-radius: 3px;
+	transition: all 0.3s ease; /* Transición para suavizar la animación */
+}
+
+/* Transformaciones para convertir el menú en una "X" */
+.menu-button.active .menu-icon:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-button.active .menu-icon:nth-child(2) {
+	opacity: 0; /* Ocultar la línea del medio */
+}
+
+.menu-button.active .menu-icon:nth-child(3) {
+	transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Estilos para mostrar el menú en pantallas grandes */
 @media (min-width: 768px) {
+	#nav-menu {
+		display: flex;
+	}
 	.menu-button {
 		display: none;
 	}
+
+	.menu-list {
+		display: flex;
+		gap: 1rem;
+	}
+}
+
+/* Mostrar el menú cuando esté activo */
+#nav-menu.show {
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	background-color: #fff;
+	width: 200px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+#nav-menu ul {
+	list-style: none;
+	padding: 10px;
+}
+
+#nav-menu li {
+	margin: 10px 0;
+}
+
+#nav-menu a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 /***********************************************************************************************************/
