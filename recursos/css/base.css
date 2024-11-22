@@ -21,7 +21,7 @@ body {
 header {
 	position: sticky;
 	top: 0; /* Se fija en la parte superior de la ventana */
-	background: #9fa1a3;
+	background: #004286b3;
 	color: black; /* Texto en blanco */
 	padding: 10px 20px; /* Espaciado interno */
 	display: flex; /* Usar flexbox para alinear elementos */
@@ -82,7 +82,7 @@ header img {
 .menu-icon {
 	width: 25px;
 	height: 3px;
-	background-color: #333;
+	background-color: white;
 	border-radius: 3px;
 	transition: all 0.3s ease; /* Transición para suavizar la animación */
 }
@@ -129,7 +129,8 @@ header img {
 	position: absolute;
 	top: 60px;
 	right: 0;
-	background-color: #fff;
+	/* background-color: #004286; */
+	background-color: #004286b3;
 	width: 200px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
@@ -145,7 +146,7 @@ header img {
 }
 
 #nav-menu a {
-	color: #333;
+	color: white;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -156,7 +157,7 @@ header img {
 footer {
 	display: flex; /* Usar flexbox para el layout */
 	align-items: center; /* Centrar verticalmente los elementos */
-	background: #9fa1a3; /* Fondo */
+	background: #004286b3; /* Fondo */
 	color: black; /* Color negro para el texto en el footer */
 	padding: 10px 20px; /* Espaciado interno */
 }
@@ -183,7 +184,7 @@ footer img {
 /* Espacio para las imágenes en el pie de página */
 .img_footer {
 	margin-right: 20px;
-	background: #9fa1a3; /* Fondo */
+	background: none; /* Fondo */
 }
 
 /* Estilo para los iconos */
