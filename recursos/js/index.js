@@ -5,7 +5,7 @@ const contenedor = document.getElementById("productos-container");
 const boton = document.getElementById("boton-carrito");
 
 boton.addEventListener("click", () => {
-	console.log("carrito");
+	console.log("carrito 3");
 });
 
 renderizarProductos(tienda.productos, contenedor);
