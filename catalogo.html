@@ -52,7 +52,7 @@
 
 		<main>
 			<section style="min-height: calc(100vh - 11.5rem)">
-				<h2>PRODUCTOS CON ENTREGA INMEDIATA</h2>
+				<h2 style="margin-bottom: 0px">PRODUCTOS CON ENTREGA INMEDIATA</h2>
 				<div class="mostrar-carrito">
 					<button
 						id="mostrar-carrito"
@@ -63,8 +63,20 @@
 						<i class="fa-brands fa-shopify"></i>
 					</button>
 				</div>
-				<div id="carrito" class="carrito">
-					<p class="carrito-vacio">Carrito vacio</p>
+
+				<div id="mi-carrito" class="carrito">
+					<div class="carrito-header">
+						<button
+							class="btn-cerrar-carrito"
+							type="button"
+							id="cerrar-carrito"
+						>
+							<i class="fa-solid fa-xmark"></i>
+						</button>
+					</div>
+					<div id="carrito">
+						<p class="carrito-vacio">Carrito vacio</p>
+					</div>
 				</div>
 
 				<div id="productos-container"></div>

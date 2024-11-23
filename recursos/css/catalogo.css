@@ -150,6 +150,35 @@ article img {
 	color: white;
 	position: fixed;
 	right: 20px;
+	top: 75px;
+}
+
+.carrito-header {
+	display: flex;
+	justify-content: end;
+	margin-bottom: 10px;
+}
+
+.btn-cerrar-carrito {
+	background: none;
+	color: white;
+	padding: 10px 20px;
+	padding-top: 0px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.btn-cerrar-carrito:hover {
+	color: rgb(29, 29, 168);
+}
+
+@media (max-width: 600px) {
+	.carrito {
+		width: 90%;
+	}
 }
 
 .show {

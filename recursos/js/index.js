@@ -8,7 +8,8 @@ renderizarProductos(tienda.productos, contenedor);
 const menuButton = document.getElementById("menu-button");
 const navMenu = document.getElementById("nav-menu");
 const mostrarMiCarrito = document.getElementById("mostrar-carrito");
-const miCarrito = document.getElementById("carrito");
+const miCarrito = document.getElementById("mi-carrito");
+const cerrarMiCarrito = document.getElementById("cerrar-carrito");
 
 // Escuchar el clic en el botón hamburguesa
 menuButton.addEventListener("click", () => {
@@ -19,4 +20,9 @@ menuButton.addEventListener("click", () => {
 // Escuchar el clic en el botón de mostrar el carrito
 mostrarMiCarrito.addEventListener("click", () => {
 	miCarrito.classList.toggle("show");
+});
+
+// Escuchar el clic en el botón de cerrar el carrito
+cerrarMiCarrito.addEventListener("click", () => {
+	miCarrito.classList.remove("show");
 });
